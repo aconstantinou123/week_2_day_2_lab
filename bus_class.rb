@@ -33,6 +33,7 @@ class Bus
   def pick_up_all_passengers(bus_stop)
     for passenger in bus_stop.queue
       @passengers.push(passenger)
+      bus_stop.queue = []
     end
   end
 end
