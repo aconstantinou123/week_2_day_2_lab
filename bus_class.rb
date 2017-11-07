@@ -29,4 +29,10 @@ class Bus
   def remove_all
     @passengers = []
   end
+
+  def pick_up_all_passengers(bus_stop)
+    for passenger in bus_stop.queue
+      @passengers.push(passenger)
+    end
+  end
 end
