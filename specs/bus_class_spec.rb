@@ -40,5 +40,9 @@ class TestBus < Minitest::Test
     assert_equal(2, @bus.number_of_passengers)
   end
 
+  def test_remove_all_passengers
+    result = @bus.remove_all
+    assert_equal(0, @bus.number_of_passengers)
+  end
 
 end
